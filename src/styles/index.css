@@ -1,0 +1,21 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body{
+  font-family: "DM Sans", sans-serif;
+}
+
+
+.prose h1 {
+  @apply text-[40px] text-[#34302D] dark:text-white font-bold mb-4;
+}
+
+.prose h2 {
+  @apply text-[28px] text-[#34302D] dark:text-white font-semibold mt-6 mb-2 ;
+}
+
+.prose p {
+  @apply text-[18px];
+}
