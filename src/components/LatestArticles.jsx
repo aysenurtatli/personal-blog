@@ -10,7 +10,7 @@ const LatestArticles = () => {
     const [posts,setPosts] = useState([])
 
     useEffect(() => {
-        axios.get("../../data/data.json")
+        axios.get("./data/data.json")
         .then((response) => {
             const firstFiveBlogs = response.data.slice(0,5) 
             setPosts(firstFiveBlogs)

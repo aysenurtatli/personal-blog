@@ -12,7 +12,7 @@ const BlogDetail = () => {
  
 
  useEffect(() => {
-    axios.get("../../data/data.json")
+    axios.get("./data/data.json")
         .then((response) => {
             const foundPost = response.data.find((item) => item.slug === slug)
             setPost(foundPost)
